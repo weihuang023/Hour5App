@@ -22,8 +22,8 @@
             android:layout_height="wrap_content"
             android:id="@+id/imageView4"
             android:src="@drawable/images"
+            android:contentDescription="@null"
             android:layout_alignParentTop="true"
-            android:layout_alignParentLeft="false"
             android:layout_alignParentStart="false"
             android:background="#810a0a"
             android:layout_alignParentBottom="true" />
@@ -35,24 +35,23 @@
             android:id="@+id/textView"
             android:layout_alignParentTop="true"
             android:layout_alignParentBottom="true"
-            android:layout_alignParentRight="true"
             android:layout_alignParentEnd="true"
-            android:layout_toRightOf="@+id/imageView4"
-            android:layout_toEndOf="@+id/imageView4"
             android:background="#ffffff"
-            android:autoText="true"
-            android:textSize="20dp" />
+            android:textSize="20sp"
+            tools:ignore="HardCodedText" />
     </RelativeLayout>
 
     <EditText
         android:layout_width="353dp"
         android:layout_height="56dp"
         android:id="@+id/editText"
+        android:labelFor="@+id/editText"
         android:layout_gravity="center_horizontal"
         android:text="Hello World"
-        android:autoText="false"
-        android:textAlignment="center"
-        android:background="#216864" />
+        android:inputType="text"
+        android:background="#216864"
+        tools:ignore="HardCodedText"
+        android:textAlignment="center" />
 
     <FrameLayout
         android:layout_width="match_parent"
@@ -68,66 +67,79 @@
         android:layout_height="wrap_content"
         android:text="Button1"
         android:id="@+id/button"
-        android:layout_gravity="left|top" />
+        android:layout_gravity="start|top"
+        tools:ignore="HardCodedText" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Button2"
         android:id="@+id/button2"
-        android:layout_gravity="right|top" />
+        android:layout_gravity="end|top"
+        tools:ignore="HardCodedText" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Button3"
         android:id="@+id/button3"
-        android:layout_gravity="left|bottom" />
+        android:layout_gravity="start|bottom"
+        tools:ignore="HardCodedText" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Button4"
         android:id="@+id/button4"
-        android:layout_gravity="right|bottom" />
+        android:layout_gravity="end|bottom"
+        tools:ignore="HardCodedText" />
 
     <ImageView
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:id="@+id/imageView"
         android:src="@drawable/images"
-        android:layout_gravity="left|center_vertical" />
+        android:layout_gravity="start|center_vertical"
+        android:contentDescription="@null"/>
 
     <ImageView
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:id="@+id/imageView2"
         android:src="@drawable/images"
-        android:layout_gravity="center" />
+        android:layout_gravity="center"
+        android:contentDescription="@null" />
 
     <ImageView
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:id="@+id/imageView3"
         android:src="@drawable/images"
-        android:layout_gravity="right|center_vertical" />
+        android:layout_gravity="end|center_vertical"
+        android:contentDescription="@null" />
     </FrameLayout>
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="76dp"
         android:id="@+id/editText2"
+        android:labelFor="@+id/editText2"
         android:layout_gravity="center_horizontal"
         android:text="This is Hello World"
-        android:textAlignment="center"
-        android:background="#1b1f62" />
+        android:inputType="text"
+        android:background="#1b1f62"
+        tools:ignore="HardcodedText"
+        android:textAlignment="center" />
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/editText3"
+        android:labelFor="@+id/editText3"
         android:layout_gravity="center_horizontal"
         android:text="Version 1.0"
-        android:textAlignment="center"
-        android:background="#9d2020" />
+        android:inputType="text"
+        android:background="#9d2020"
+        tools:ignore="HardcodedText"
+        android:textAlignment="center" />
 </LinearLayout>
